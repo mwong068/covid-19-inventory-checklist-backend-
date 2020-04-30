@@ -27,6 +27,6 @@ class HelpfulUsersController < ApplicationController
 
     private
     def user_params
-        params.require(:helpful_user).permit(:username, :password, :name, :email, :location, :phone_number, :family_size, :can_deliver, :has_children)
+        params.require(:helpful_user).permit(:username, :password, :name, :email, :location, :phone_number, :image_url, :family_size, :can_deliver, :has_children)
     end
 end
