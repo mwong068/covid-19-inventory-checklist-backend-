@@ -12,14 +12,14 @@ class HelpfulUsersController < ApplicationController
     end
 
     def profile
-        render json: { user: HelpfulUsersSerializer.new(current_user) }, status: :accepted
+        render json: { user: HelpfulUserSerializer.new(current_user) }, status: :accepted
     end
 
     def create
         @user = HelpfulUser.create(user_params)
         if @user.valid?
             @token = encode_token(user_id: @user.id)
-            render json: { user: HelpfulUsersSerializer.new(@user), jwt: @token }, status: :created
+            render json: { user: HelpfulUserSerializer.new(@user), jwt: @token }, status: :created
         else
             render json: { error: 'failed to create user' }, status: :not_acceptable
         end
