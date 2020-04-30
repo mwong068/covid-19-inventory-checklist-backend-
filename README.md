@@ -60,8 +60,8 @@ After the above requirements have been met:
 1. Clone this repository and `cd` into it
 
 ```bash
-git clone https://github.com/mwong068/covid-19-inventory-checklist-frontend.git
-cd covid-19-inventory-checklist-frontend
+git clone https://github.com/mwong068/covid-19-inventory-checklist-backend-.git
+cd covid-19-inventory-checklist-backend-
 ```
 
 2. Install dependencies
